@@ -5,23 +5,21 @@
 class Atlan < Formula
   desc "Software to create fast and easy drum rolls."
   homepage "https://example.com/"
-  version "1.1.4"
+  version "0.1.0"
   license "MIT"
-
-  depends_on "git"
 
   on_macos do
     on_intel do
-      url "https://github.com/rittikdasgupta/inmemorydb/releases/download/v1.1.4/atlan_Darwin_amd64.tar.gz"
-      sha256 "99f6a8cc56e62a3d5b9916b3bb37e94d9c7aac233ab56496548cbf56e12a5a6c"
+      url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.0/atlan_Darwin_amd64.tar.gz"
+      sha256 "bb94d1808f5aebfd3bcab1b36d0969e07ca94d35bff57b42f69f0089d268e452"
 
       def install
         bin.install "atlan"
       end
     end
     on_arm do
-      url "https://github.com/rittikdasgupta/inmemorydb/releases/download/v1.1.4/atlan_Darwin_arm64.tar.gz"
-      sha256 "0b062eabd899a815533828b4e55210e697737b0ae5eb47acb250ba8f52039b60"
+      url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.0/atlan_Darwin_arm64.tar.gz"
+      sha256 "72e00cfd07b7f27e3c19cb6a26b2b3f13658b766172816e02852732028a62464"
 
       def install
         bin.install "atlan"
@@ -32,8 +30,8 @@ class Atlan < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rittikdasgupta/inmemorydb/releases/download/v1.1.4/atlan_Linux_amd64.tar.gz"
-        sha256 "3044911127c5d84f13d6ebe9f7dd61cdebde2de50036d159b6717c96dfdce422"
+        url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.0/atlan_Linux_amd64.tar.gz"
+        sha256 "4f46747749121e8589981bd781a133f82dd06a196dd3fe5ebf6d9fa53b276896"
 
         def install
           bin.install "atlan"
@@ -42,8 +40,8 @@ class Atlan < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rittikdasgupta/inmemorydb/releases/download/v1.1.4/atlan_Linux_arm64.tar.gz"
-        sha256 "a88f2f550a8d83489a046c03647bd935cb3a876d055f448c4873696c656bab89"
+        url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.0/atlan_Linux_arm64.tar.gz"
+        sha256 "7a4558ce2a5eba0d008f36467518c6cfbbfa006872d20e856f0d5263cddb0b48"
 
         def install
           bin.install "atlan"
