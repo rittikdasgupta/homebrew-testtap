@@ -11,7 +11,7 @@ class AtlanAT016 < Formula
   on_macos do
     on_intel do
       url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.6/atlan_Darwin_amd64.tar.gz"
-      sha256 "083371195a1c4ff713a3fcf22fd5aae0a4bd4798eb06651bda2ee5a74cbb698f"
+      sha256 "8640c5e60e01a8d9ab6f2af7a8976a489ec1ca8ceef81e0fafdf0fa38a9539ff"
 
       def install
         bin.install "atlan"
@@ -19,7 +19,7 @@ class AtlanAT016 < Formula
     end
     on_arm do
       url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.6/atlan_Darwin_arm64.tar.gz"
-      sha256 "d55f54cb72b16ca02e0afe70826e40d3dee82ad9af6f96027848d24de49bceed"
+      sha256 "5af2a4f3dd0018310a92abe64b377fb3e7fb097a15c61495196e022a7866b4cf"
 
       def install
         bin.install "atlan"
@@ -31,7 +31,7 @@ class AtlanAT016 < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.6/atlan_Linux_amd64.tar.gz"
-        sha256 "fb8d87e07387877c42b8df7444d784c055210eee1ca436e9d33a8cde5701084f"
+        sha256 "ab5bccdda69f7012c73260b6408be81a5415a68bdbe34e04a308b5dc0819cd43"
 
         def install
           bin.install "atlan"
@@ -41,7 +41,7 @@ class AtlanAT016 < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rittikdasgupta/releases/releases/download/v0.1.6/atlan_Linux_arm64.tar.gz"
-        sha256 "f2d0c09bdb4574b8d7fde7bdd2739e262716947bee782bcb326f2eb5cfd0e4d6"
+        sha256 "a07e9e86ffadeff447bd2b883b73e81a7ab7b03fff9bf4e73b14af2b164d7322"
 
         def install
           bin.install "atlan"
