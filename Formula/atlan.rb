@@ -5,21 +5,21 @@
 class Atlan < Formula
   desc "Atlan CLI"
   homepage "https://developer.atlan.com/sdks/cli"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.1/atlan_Darwin_amd64.tar.gz"
-      sha256 "75a69a8ea23e571301c83d530fc175b40102b0b36bf11009e6f7af35e118425e"
+      url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.2/atlan_Darwin_amd64.tar.gz"
+      sha256 "c9b4f035887fd8d90a6f8bb0972bb684ca37e6236b7847876bfb069193cb0a27"
 
       def install
         bin.install "atlan"
       end
     end
     on_arm do
-      url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.1/atlan_Darwin_arm64.tar.gz"
-      sha256 "bac65fc7c4713a5e196bc496b478eb06d17b7f97a20068921b20cf0dd52e9efe"
+      url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.2/atlan_Darwin_arm64.tar.gz"
+      sha256 "a220f59f4b3ddd77e80aa1ebf3816286e1ee19e6d9c169668627263cd3d79283"
 
       def install
         bin.install "atlan"
@@ -30,8 +30,8 @@ class Atlan < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.1/atlan_Linux_amd64.tar.gz"
-        sha256 "332717b48ad3e4a6ee9712c9766bc31b486238a8d055355dc0dab0c42debfd1b"
+        url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.2/atlan_Linux_amd64.tar.gz"
+        sha256 "5e7faeb8ddffe04d79057daf72c8a8326c1634c3f2b17e4b8f82d0fd772b6394"
 
         def install
           bin.install "atlan"
@@ -40,8 +40,8 @@ class Atlan < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.1/atlan_Linux_arm64.tar.gz"
-        sha256 "4a92f01737cb93bc8bb0b4205455361e1225f47aeaa09a986712ef45ffa30b75"
+        url "https://github.com/rittikdasgupta/releases/releases/download/v0.2.2/atlan_Linux_arm64.tar.gz"
+        sha256 "34304d2a2404768a356a8dcfb3c78ae0a1ba479a6998e4a59cf10bfc04867bc1"
 
         def install
           bin.install "atlan"
